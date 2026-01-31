@@ -1,24 +1,12 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "27ff97d7750dd8628acec25b2750fda4"
-name = "UPS Connector"
+client_id = "ee7e69628d301a6b969153d31f2a6985"
+name = "UPS Direct"
 application_url = "https://ups-connector.onrender.com"
-embedded = true
-
-[build]
-automatically_update_urls_on_dev = true
-include_config_on_deploy = true
+embedded = false
 
 [webhooks]
 api_version = "2026-01"
-
-  [[webhooks.subscriptions]]
-  topics = [ "app/scopes_update" ]
-  uri = "/webhooks/app/scopes_update"
-
-  [[webhooks.subscriptions]]
-  topics = [ "app/uninstalled" ]
-  uri = "/webhooks/app/uninstalled"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
