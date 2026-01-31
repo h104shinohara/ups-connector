@@ -18,6 +18,13 @@
     "graphql-codegen": "graphql-codegen",
     "vite": "vite",
     "typecheck": "react-router typegen && tsc --noEmit"
+    {
+  "scripts": {
+    "build": "echo \"no build step\"",
+    "start": "node server.js"
+  }
+}
+
   },
   "type": "module",
   "engines": {
